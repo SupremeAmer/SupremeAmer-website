@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+.nav-btn {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #555;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+main h1 {
+    font-size: 36px;
+}
+
+
+/* Add a background image to the main section */
+main {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Change the font size and color of the heading */
+main h1 {
+    font-size: 48px;
+    color: #333;
+}
+
+/* Add a border to the navigation buttons */
+.nav-btn {
+    border: 1px solid #555;
+}
+
+
+
+/* Apply styles for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    main {
+        height: 60vh;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav li {
+        margin-right: 0;
+    }
+}
